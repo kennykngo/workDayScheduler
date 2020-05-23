@@ -29,9 +29,8 @@ $(document).ready(function () {
 
   for (i = 9; i <= 17; i++) {
     $(`#${i}-input`).val(localStorage.getItem(i));
-    console.log("hello");
+
     if (i < currentTime) {
-      console.log("hello world");
       $(`#${i}-input`).addClass("past");
     } else if (i === currentTime) {
       $(`#${i}-input`).addClass("present");
